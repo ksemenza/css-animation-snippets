@@ -1,0 +1,131 @@
+.about-ctr {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+}
+
+.dev-title {
+    font-family: 'DoHyeon';
+    font-size: 32px;
+    margin-bottom: -5px;
+
+}
+
+.tech-about-wrap {
+    display: flex;
+    align-items: center;
+
+}
+
+.tech-logo-img {
+    height: 55px;
+}
+
+.logo-img-ctr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo-img-name-ctr {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.deploy-ctr {
+    display: flex;
+    /* justify-content: left; */
+    width: 100%;
+    margin-bottom: 45px;
+    flex-direction: column;
+
+}
+
+h2 {
+    padding-bottom: 45px;
+    text-shadow: 1px 1px 1px #09868b;
+}
+
+
+
+
+h3.tech-title {
+    font-size: 32px;
+    font-weight: normal;
+    margin-right: 25px;
+    color: #09868b;
+    text-shadow: 0.5px 0.5px 0.5px black;
+
+}
+
+h4.tech-stack-list {
+    font-size: 25px;
+    display: flex;
+    color: black;
+    font-family: 'DoHyeon';
+    font-weight: 100;
+    text-shadow: 0.5px 0.5px 0.5px #09868b;
+}
+
+@media(max-width:900px) {
+
+    h2 {
+        padding-bottom: 0px;
+        margin-bottom: -15px;
+    }
+
+    h3.tech-title {
+        font-size: 28px;
+        color: #09868b;
+        font-weight: 500;
+        margin-left: 40px;
+        font-size: 35px;
+
+    }
+
+    .logo-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tech-logo-img {
+        height: 35px;
+        margin-right: 15px;
+    }
+
+    .deploy-ctr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:600px) {
+
+    .logo-row {
+        display: flex;
+        flex-direction: column
+    }
+
+    .logo-img-ctr {
+        display: flex;
+        margin-left: -7px;
+    }
+
+    img.tech-logo-img {
+        width: 35px;
+    }
+
+    h4.tech-stack-list {
+        margin-right: 15px;
+        font-size: 18px;
+    }
+
+}

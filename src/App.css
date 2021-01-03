@@ -40,18 +40,18 @@
 
 .envelope {
 position: fixed;
-background-color: #A1D6E2;
+background-color: #f1f1f2;
 border-top: 10px solid #A1D6E2;
 border-bottom: 10px solid #A1D6E2;
 color:#1995ad;
 margin: 0 auto;
-width: 40px;
-max-width: 800px;
+width: 60px;
+max-width: 1200px;
 overflow: hidden;
 border: 1px solid #282c34;
 transition: width 1s linear,
 background-color 2s linear 1s,
-color 2s linear 1s;
+color 1s linear 2s;
 
 }
 
@@ -63,14 +63,16 @@ color 2s linear 1s;
  top: 0px;
  left: 0px;
  bottom: 0px;
- width: 40px;
+ width: 60px;
 }
 
 
 .envelope:hover {
-  width: 800px;
+  width: 1200px;
   color: black;
-  background-color: #f1f1f2;
+  background-color:white;
+  cursor: pointer;
+  z-index: 1;
   
 }
 
@@ -83,17 +85,19 @@ color 2s linear 1s;
   right: 0px;
   bottom: 0px;
   width: 40px;
+  z-index: 1;
 
 }
 
-.hidden-content {
+div.hidden-content {
+  display: flex;
   font-family: sans-serif;
   font-weight: 900;
   font-size: 18px;
   padding: 60px;
-  height: 600px;
-  width: initial;
+  height: 700px;
   white-space:nowrap;
+  justify-content: center;
 }
 
 .test {
@@ -127,8 +131,8 @@ div.test::before {
 
 div.test::after {
   content: attr(data-tooltip);
-  /* position: absolute; 
-   left: 0; 
+   position: absolute; 
+  /* left: 0; 
    top: -2.2em; */
   font-size: 0.5em;
   background: #e5e5e5;
@@ -141,3 +145,23 @@ div.test::after {
 .test:hover::after {
   opacity: 1;
 }
+
+h2.side-menu {
+  display: flex;
+  cursor: pointer;
+  justify-content: left;
+  align-items: center;
+  position: fixed;
+  margin-top: 275px;
+  font-size: 42px;
+  transform: rotate(-90deg);
+  padding-bottom: 100px;
+  z-index: 1;
+}
+
+h2.side-menu:hover {
+  cursor: pointer;
+  z-index: -1;
+}
+
+
