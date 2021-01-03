@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 32px;
 }
 
 .App-logo {
@@ -35,4 +36,108 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.envelope {
+position: absolute;
+background-color: #A1D6E2;
+border-top: 10px solid #A1D6E2;
+border-bottom: 10px solid #A1D6E2;
+color:#1995ad;
+margin: 0 auto;
+width: 40px;
+max-width: 800px;
+overflow: hidden;
+border: 1px solid #282c34;
+transition: width 1s linear,
+background-color 2s linear 1s,
+color 2s linear 1s;
+
+}
+
+
+.envelope::before {
+ content:'';
+ background-color: #1995ad;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ bottom: 0px;
+ width: 40px;
+}
+
+
+.envelope:hover {
+  width: 800px;
+  color: black;
+  background-color: #f1f1f2;
+  transform: scale(1.1);
+}
+
+/* first element in view */
+.envelope::after {
+  content: "";
+  /* background-color: #1995ad; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 40px;
+
+}
+
+.hidden-content {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  padding: 60px;
+  height: 100%;
+  width: initial;
+  white-space:nowrap;
+}
+
+.test {
+  margin: 0 auto;
+}
+
+p.test {
+ font-size:52px;
+ /* margin: 5rem; */
+ margin: 15px;
+}
+
+div.tool-test {
+  font-size: 35px;
+  width: fit-content;
+}
+
+div.test::before {
+ content: "";
+  position: absolute; 
+ top: -0.4em;
+ left: 0.5em;
+ width: 0;
+ height: 0; 
+ border-style: solid;
+ /* border-width: 0.4em 0.4em 0 0.4em; */
+ border-color: #e5e5e5 transparent transparent transparent;
+ opacity: 0;
+ transition: opacity 0.3s ease-in-out;
+}
+
+div.test::after {
+  content: attr(data-tooltip);
+  /* position: absolute; 
+   left: 0; 
+   top: -2.2em; */
+  font-size: 0.5em;
+  background: #e5e5e5;
+  padding: 0.25em 0.5em;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hover-test:hover::before,
+.test:hover::after {
+  opacity: 1;
 }
