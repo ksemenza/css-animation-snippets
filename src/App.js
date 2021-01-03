@@ -5,23 +5,18 @@ function App() {
   return (
     <div className="App">
 
-      <h1>Home Page Container</h1>
-      <div className='contact-wrap'>
-        <div className='test tool-test' data-tooltip={'781-866-1073'}>
-        <div className='test tool-test' data-tooltip={'ksemenza.247@gmail.com'}>
-            <div className='test tool-test' data-tooltip={'Kim Semenza'}>
-              <p className='test hover-test'>About</p>
-              </div>
-          
-        </div>
-        </div>
-        </div>
+      <h1>Kim Semenza Portfolio Fun</h1>
+
         
 
       <div className='envelope' data-tooltip='Project Title' >
         <div className='hidden-content'>
           <h3>Projects</h3>
-          <p>This Is A test Just a test</p>
+          <p>This is where my development projects</p>
+          <p>To include a snapshot image of landing page </p>
+          <p>It will also have a link to a live demo</p>
+          <p> And then a like to the github repo</p>
+          <p>Guin Dev Productions 2021 </p>
         </div>
       </div>
 

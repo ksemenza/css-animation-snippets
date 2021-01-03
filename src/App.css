@@ -39,7 +39,7 @@
 }
 
 .envelope {
-position: absolute;
+position: fixed;
 background-color: #A1D6E2;
 border-top: 10px solid #A1D6E2;
 border-bottom: 10px solid #A1D6E2;
@@ -71,7 +71,7 @@ color 2s linear 1s;
   width: 800px;
   color: black;
   background-color: #f1f1f2;
-  transform: scale(1.1);
+  
 }
 
 /* first element in view */
@@ -89,9 +89,9 @@ color 2s linear 1s;
 .hidden-content {
   font-family: sans-serif;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 18px;
   padding: 60px;
-  height: 100%;
+  height: 600px;
   width: initial;
   white-space:nowrap;
 }
