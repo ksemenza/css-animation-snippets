@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   padding: 32px;
+  height: fit-content;
 }
 
 .App-logo {
@@ -87,7 +88,7 @@ color 1s linear 2s;
   top: 0px;
   right: 0px;
   bottom: 0px;
-  width: 40px;
+  width: 60px;
   z-index: 1;
 
 }
@@ -166,7 +167,12 @@ h2.side-menu {
 h2.side-menu:hover {
   cursor: pointer;
    z-index: -1;
+}
 
+.side-menu:hover{
+visibility: hidden;}
+.side-menu:active{
+  display: none;
 }
 
 h2.menu-title {
