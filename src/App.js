@@ -25,15 +25,11 @@ function App() {
     <div className="App">
       
         
-  <h2 className='side-menu'>Projects</h2>
+  <h2 className='side-menu'>Skills & Knowledge</h2>
       <div className='envelope' data-tooltip='Project Title' >
+ <h2 className='menu-title'>Skills & Knowledge</h2>
 
         <div className='hidden-content'>
-             <a
-                  className="project-name-a"
-                  href="https://conway-life-game-js-git-master.ksemenza.vercel.app/"
-                  target="blank"
-                >project</a>
           <div className='about-ctr'>
                <div className="tech-img-wrap">
 
