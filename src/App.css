@@ -66,6 +66,7 @@ color 1s linear 2s;
  left: 0px;
  bottom: 0px;
  width: 60px;
+ max-height: 100vh;
 }
 
 
@@ -153,26 +154,20 @@ div.test::after {
 h2.side-menu {
   display: flex;
   cursor: pointer;
-  justify-content: left;
-  align-items: center;
   position: fixed;
   margin-top: 10%;
-  /* margin-top: 205px; */
   font-size: 42px;
+  max-width: 100vw;
   transform: rotate(-90deg);
   padding-bottom: 324px;
   z-index: 1;
+    white-space:nowrap;
+
 }
 
 h2.side-menu:hover {
   cursor: pointer;
    z-index: -1;
-}
-
-.side-menu:hover{
-visibility: hidden;}
-.side-menu:active{
-  display: none;
 }
 
 h2.menu-title {
